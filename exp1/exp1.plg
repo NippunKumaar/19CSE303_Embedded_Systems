@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\exp1\exp1.uvproj
+Project File Date:  08/23/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling exp1_1.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1_1.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1_1.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1_2.s...
+exp1_2.s(1): error: A1137E: Unexpected characters at end of line
+exp1_2.s(3): error: A1186E: Code generated in data area
+exp1_2.s(4): error: A1186E: Code generated in data area
+exp1_2.s(5): error: A1186E: Code generated in data area
+exp1_2.s(6): warning: A1313W: Missing END directive at end of file
+Target not created
+Build target 'Target 1'
+assembling exp1_2.s...
+exp1_2.s(1): error: A1137E: Unexpected characters at end of line
+exp1_2.s(3): error: A1186E: Code generated in data area
+exp1_2.s(4): error: A1186E: Code generated in data area
+exp1_2.s(5): error: A1186E: Code generated in data area
+exp1_2.s(7): error: A1186E: Code generated in data area
+Target not created
+Build target 'Target 1'
+assembling exp1_2.s...
+linking...
+Program Size: Code=32 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1_2.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1_2.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"exp1.axf" - 0 Error(s), 0 Warning(s).
