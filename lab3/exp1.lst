@@ -1,0 +1,113 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             data,DATA,READONLY
+    2 00000000 00000043 
+                       value1  dcd              0x43
+    3 00000004 00000045 
+                       value2  dcd              0x45
+    4 00000008         
+    5 00000008                 AREA             data1,DATA,READWRITE
+    6 00000000 00000000 
+                       result  dcd              0x00
+    7 00000004         
+    8 00000004                 AREA             exp1,CODE,READONLY
+    9 00000000 E59F0018        ldr              r0,=value1
+   10 00000004 E59F1018        ldr              r1,=value2
+   11 00000008 E5902000        ldr              r2,[r0]
+   12 0000000C E5913000        ldr              r3,[r1]
+   13 00000010 E0824003        add              r4,r2,r3
+   14 00000014 E59F500C        ldr              r5,=result
+   15 00000018 E5854000        str              r4,[r5]
+   16 0000001C EAFFFFFE 
+                       e       b                e
+   17 00000020         
+   18 00000020         
+   19 00000020         
+   20 00000020                 end
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp1.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp1.lst exp1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data 00000000
+
+Symbol: data
+   Definitions
+      At line 1 in file exp1.s
+   Uses
+      None
+Comment: data unused
+value1 00000000
+
+Symbol: value1
+   Definitions
+      At line 2 in file exp1.s
+   Uses
+      At line 9 in file exp1.s
+Comment: value1 used once
+value2 00000004
+
+Symbol: value2
+   Definitions
+      At line 3 in file exp1.s
+   Uses
+      At line 10 in file exp1.s
+Comment: value2 used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 5 in file exp1.s
+   Uses
+      None
+Comment: data1 unused
+result 00000000
+
+Symbol: result
+   Definitions
+      At line 6 in file exp1.s
+   Uses
+      At line 14 in file exp1.s
+Comment: result used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 0000001C
+
+Symbol: e
+   Definitions
+      At line 16 in file exp1.s
+   Uses
+      At line 16 in file exp1.s
+Comment: e used once
+exp1 00000000
+
+Symbol: exp1
+   Definitions
+      At line 8 in file exp1.s
+   Uses
+      None
+Comment: exp1 unused
+2 symbols
+329 symbols in table

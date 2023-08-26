@@ -1,0 +1,57 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             exp2, CODE, READONLY
+    2 00000000         
+    3 00000000 E3A05000        mov              r5, #0x00   ;data
+    4 00000004 E3A02008        mov              r2, #0x08   ;shift counter
+    5 00000008 E3A01000        mov              r1, #0x00   ; intialiazing resu
+                                                            lt register
+    6 0000000C E1B050A5 
+                       shift   movs             r5, r5, lsr #1 ; shifting
+    7 00000010 22811001        addcs            r1, r1, #0x01
+    8 00000014 E2422001        sub              r2, r2, #0x01 ; decrementing sh
+                                                            ift counter
+    9 00000018 E3520000        cmp              r2, #0      ; checking counter 
+                                                            to be ZERO
+   10 0000001C 1AFFFFFA        bne              shift
+   11 00000020 EAFFFFFE 
+                       e       b                e
+   12 00000024                 end
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp2.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp2.lst exp2.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000020
+
+Symbol: e
+   Definitions
+      At line 11 in file exp2.s
+   Uses
+      At line 11 in file exp2.s
+Comment: e used once
+exp2 00000000
+
+Symbol: exp2
+   Definitions
+      At line 1 in file exp2.s
+   Uses
+      None
+Comment: exp2 unused
+shift 0000000C
+
+Symbol: shift
+   Definitions
+      At line 6 in file exp2.s
+   Uses
+      At line 10 in file exp2.s
+Comment: shift used once
+3 symbols
+323 symbols in table

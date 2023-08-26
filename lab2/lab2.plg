@@ -1,0 +1,25 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\lab2\lab2.uvproj
+Project File Date:  08/26/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(4): error: A1147E: Bad shift name
+exp1.s(5): error: A1150E: Bad symbol, not defined or external
+exp1.s(6): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=20 RO-data=0 RW-data=0 ZI-data=0  
+"lab2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=20 RO-data=0 RW-data=0 ZI-data=0  
+"lab2.axf" - 0 Error(s), 0 Warning(s).

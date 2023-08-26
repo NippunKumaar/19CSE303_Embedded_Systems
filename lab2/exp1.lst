@@ -1,0 +1,46 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             exp1, CODE, READONLY
+    2 00000000         
+    3 00000000 E3A01001        mov              r1, #0x01   ; Data (Change this
+                                                             for different test
+                                                             case)
+    4 00000004 E2111003        ands             r1, r1, #0x03 ; and masing with
+                                                             setting condition 
+                                                            codes. Mask value i
+                                                            s 0x03
+    5 00000008 03A020FF        moveq            r2, #0xFF
+    6 0000000C 13A020AA        movne            r2, #0xAA
+    7 00000010 EAFFFFFE 
+                       e       b                e
+    8 00000014                 end
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp1.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp1.lst exp1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000010
+
+Symbol: e
+   Definitions
+      At line 7 in file exp1.s
+   Uses
+      At line 7 in file exp1.s
+Comment: e used once
+exp1 00000000
+
+Symbol: exp1
+   Definitions
+      At line 1 in file exp1.s
+   Uses
+      None
+Comment: exp1 unused
+2 symbols
+322 symbols in table
