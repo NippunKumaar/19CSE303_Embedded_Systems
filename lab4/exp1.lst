@@ -1,0 +1,133 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             data, DATA, READONLY
+    2 00000000 00000001 
+              00000002 
+              00000003 
+              FFFFFFFC num     dcd              1, 2, 3, -4
+    3 00000010 00000004 
+                       len     dcd              4
+    4 00000014         
+    5 00000014                 AREA             data1, DATA, READWRITE
+    6 00000000 00 00   result  dcw              0
+    7 00000002         
+    8 00000002                 AREA             exp1, CODE, READONLY
+    9 00000000 E59F1030        ldr              r1, =num
+   10 00000004 E59F2030        ldr              r2, =len
+   11 00000008 E59F3030        ldr              r3, =result
+   12 0000000C E3A04000        mov              r4, #0      ;intializing the re
+                                                            sult register
+   13 00000010 E5925000        ldr              r5, [r2]    ;loading len
+   14 00000014 E1D160F0 
+                       loading ldrsh            r6, [r1]    ;loading a byte for
+                                                             addition
+   15 00000018 E1B06006        movs             r6, r6
+   16 0000001C 42844001        addmi            r4, r4, #1
+   17 00000020 E2811004        add              r1, r1, #0x04 ; incrementing th
+                                                            e address to point 
+                                                            to next byte
+   18 00000024 E2455001        sub              r5, r5, #0x01 ; decrementing le
+                                                            ngth by 1
+   19 00000028 E3550000        cmp              r5, #0x00   ; checking for leng
+                                                            th to be zero
+   20 0000002C 1AFFFFF8        bne              loading
+   21 00000030 E5834000        str              r4, [r3]
+   22 00000034 EAFFFFFE 
+                       e       b                e
+   23 00000038         
+   24 00000038                 end
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp1.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp1.lst exp1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data 00000000
+
+Symbol: data
+   Definitions
+      At line 1 in file exp1.s
+   Uses
+      None
+Comment: data unused
+len 00000010
+
+Symbol: len
+   Definitions
+      At line 3 in file exp1.s
+   Uses
+      At line 10 in file exp1.s
+Comment: len used once
+num 00000000
+
+Symbol: num
+   Definitions
+      At line 2 in file exp1.s
+   Uses
+      At line 9 in file exp1.s
+Comment: num used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 5 in file exp1.s
+   Uses
+      None
+Comment: data1 unused
+result 00000000
+
+Symbol: result
+   Definitions
+      At line 6 in file exp1.s
+   Uses
+      At line 11 in file exp1.s
+Comment: result used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000034
+
+Symbol: e
+   Definitions
+      At line 22 in file exp1.s
+   Uses
+      At line 22 in file exp1.s
+Comment: e used once
+exp1 00000000
+
+Symbol: exp1
+   Definitions
+      At line 8 in file exp1.s
+   Uses
+      None
+Comment: exp1 unused
+loading 00000014
+
+Symbol: loading
+   Definitions
+      At line 14 in file exp1.s
+   Uses
+      At line 20 in file exp1.s
+Comment: loading used once
+3 symbols
+330 symbols in table

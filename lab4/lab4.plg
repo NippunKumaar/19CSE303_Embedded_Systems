@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\lab4\lab4.uvproj
+Project File Date:  <unknown>
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(8): error: A1163E: Unknown opcode exp1, , expecting opcode or Macro
+exp1.s(9): error: A1186E: Code generated in data area
+exp1.s(10): error: A1186E: Code generated in data area
+exp1.s(11): error: A1186E: Code generated in data area
+exp1.s(12): error: A1186E: Code generated in data area
+exp1.s(13): error: A1186E: Code generated in data area
+exp1.s(14): error: A1186E: Code generated in data area
+exp1.s(15): error: A1186E: Code generated in data area
+exp1.s(16): error: A1186E: Code generated in data area
+exp1.s(17): error: A1186E: Code generated in data area
+exp1.s(18): error: A1186E: Code generated in data area
+exp1.s(19): error: A1186E: Code generated in data area
+exp1.s(20): error: A1186E: Code generated in data area
+exp1.s(21): error: A1186E: Code generated in data area
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=64 RO-data=12 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(8): error: A1137E: Unexpected characters at end of line
+exp1.s(9): error: A1186E: Code generated in data area
+exp1.s(10): error: A1186E: Code generated in data area
+exp1.s(11): error: A1186E: Code generated in data area
+exp1.s(12): error: A1186E: Code generated in data area
+exp1.s(13): error: A1186E: Code generated in data area
+exp1.s(14): error: A1186E: Code generated in data area
+exp1.s(15): error: A1186E: Code generated in data area
+exp1.s(16): error: A1186E: Code generated in data area
+exp1.s(17): error: A1186E: Code generated in data area
+exp1.s(18): error: A1186E: Code generated in data area
+exp1.s(19): error: A1186E: Code generated in data area
+exp1.s(20): error: A1186E: Code generated in data area
+exp1.s(21): error: A1186E: Code generated in data area
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=64 RO-data=12 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=64 RO-data=12 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=68 RO-data=12 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=68 RO-data=12 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=64 RO-data=20 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=68 RO-data=20 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=68 RO-data=20 RW-data=4 ZI-data=0  
+"lab4.axf" - 0 Error(s), 0 Warning(s).
