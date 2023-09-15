@@ -1,0 +1,126 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             data, DATA, READONLY
+    2 00000000 41 6D 72 
+              69 74 61 
+              20 73 63 
+              68 6F 6F 
+              6C 00    string  dcb              "Amrita school\0"
+    3 0000000E         
+    4 0000000E                 AREA             data1, DATA, READWRITE
+    5 00000000 00000000 
+                       destination
+                               dcd              0
+    6 00000004         
+    7 00000004                 AREA             exp1, CODE, READONLY
+    8 00000000 E59F0028        ldr              r0, =string
+    9 00000004 E59F1028        ldr              r1, =destination
+   10 00000008 E3A03000        mov              r3, #0      ; Intializing posit
+                                                            ion counter
+   11 0000000C E4D02001 
+                       loop    ldrb             r2, [r0], #1
+   12 00000010 E2833001        add              r3, r3, #1
+   13 00000014 E3520020        cmp              r2, #" "
+   14 00000018 0A000002        beq              exit
+   15 0000001C E3520000        cmp              r2, #"\0"
+   16 00000020 03E03000        moveq            r3, #-1
+   17 00000024 1AFFFFF8        bne              loop
+   18 00000028 E5813000 
+                       exit    str              r3, [r1]
+   19 0000002C EAFFFFFE 
+                       e       b                e
+   20 00000030                 end
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp3.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp3.lst exp3.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data 00000000
+
+Symbol: data
+   Definitions
+      At line 1 in file exp3.s
+   Uses
+      None
+Comment: data unused
+string 00000000
+
+Symbol: string
+   Definitions
+      At line 2 in file exp3.s
+   Uses
+      At line 8 in file exp3.s
+Comment: string used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 4 in file exp3.s
+   Uses
+      None
+Comment: data1 unused
+destination 00000000
+
+Symbol: destination
+   Definitions
+      At line 5 in file exp3.s
+   Uses
+      At line 9 in file exp3.s
+Comment: destination used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 0000002C
+
+Symbol: e
+   Definitions
+      At line 19 in file exp3.s
+   Uses
+      At line 19 in file exp3.s
+Comment: e used once
+exit 00000028
+
+Symbol: exit
+   Definitions
+      At line 18 in file exp3.s
+   Uses
+      At line 14 in file exp3.s
+Comment: exit used once
+exp1 00000000
+
+Symbol: exp1
+   Definitions
+      At line 7 in file exp3.s
+   Uses
+      None
+Comment: exp1 unused
+loop 0000000C
+
+Symbol: loop
+   Definitions
+      At line 11 in file exp3.s
+   Uses
+      At line 17 in file exp3.s
+Comment: loop used once
+4 symbols
+330 symbols in table

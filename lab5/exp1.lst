@@ -1,0 +1,111 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             data, DATA, READONLY
+    2 00000000 41 6D 72 
+              69 74 61 
+              00       string  dcb              "Amrita\0"
+    3 00000007         
+    4 00000007                 AREA             data1, DATA, READWRITE
+    5 00000000 00000000 
+                       length  dcd              0
+    6 00000004         
+    7 00000004                 AREA             exp1, CODE, READONLY
+    8 00000000 E59F001C        ldr              r0, =string
+    9 00000004 E59F101C        ldr              r1, =length
+   10 00000008 E3A03000        mov              r3, #0      ; Intializing lengt
+                                                            h register
+   11 0000000C E4D02001 
+                       loop    ldrb             r2, [r0], #1
+   12 00000010 E3520000        cmp              r2, #"\0"
+   13 00000014 12833001        addne            r3, r3, #1
+   14 00000018 1AFFFFFB        bne              loop
+   15 0000001C E5813000        str              r3, [r1]
+   16 00000020 EAFFFFFE 
+                       e       b                e
+   17 00000024                 end
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oexp1.o -IC:\Keil
+\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=exp1.lst exp1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data 00000000
+
+Symbol: data
+   Definitions
+      At line 1 in file exp1.s
+   Uses
+      None
+Comment: data unused
+string 00000000
+
+Symbol: string
+   Definitions
+      At line 2 in file exp1.s
+   Uses
+      At line 8 in file exp1.s
+Comment: string used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 4 in file exp1.s
+   Uses
+      None
+Comment: data1 unused
+length 00000000
+
+Symbol: length
+   Definitions
+      At line 5 in file exp1.s
+   Uses
+      At line 9 in file exp1.s
+Comment: length used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000020
+
+Symbol: e
+   Definitions
+      At line 16 in file exp1.s
+   Uses
+      At line 16 in file exp1.s
+Comment: e used once
+exp1 00000000
+
+Symbol: exp1
+   Definitions
+      At line 7 in file exp1.s
+   Uses
+      None
+Comment: exp1 unused
+loop 0000000C
+
+Symbol: loop
+   Definitions
+      At line 11 in file exp1.s
+   Uses
+      At line 14 in file exp1.s
+Comment: loop used once
+3 symbols
+329 symbols in table

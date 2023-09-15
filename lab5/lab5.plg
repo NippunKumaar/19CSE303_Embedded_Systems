@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\lab5\lab5.uvproj
+Project File Date:  09/15/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(12): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(12): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(12): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(12): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=40 RO-data=8 RW-data=0 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=44 RO-data=8 RW-data=0 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=44 RO-data=8 RW-data=0 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=44 RO-data=8 RW-data=0 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+exp1.s(5): warning: A1581W: Added 1 bytes of padding at address 0x7
+linking...
+Program Size: Code=44 RO-data=12 RW-data=0 ZI-data=0  
+"lab5.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling exp1.s...
+linking...
+Program Size: Code=44 RO-data=8 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp2.s...
+linking...
+Program Size: Code=36 RO-data=8 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp2.s...
+linking...
+Program Size: Code=36 RO-data=8 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp3.s...
+exp3.s(12): error: A1106E: Missing comma
+exp3.s(15): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp3.s...
+exp3.s(15): error: A1150E: Bad symbol, not defined or external
+Target not created
+Build target 'Target 1'
+assembling exp3.s...
+linking...
+Program Size: Code=56 RO-data=16 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp3.s...
+linking...
+Program Size: Code=56 RO-data=16 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling exp3.s...
+linking...
+Program Size: Code=56 RO-data=16 RW-data=4 ZI-data=0  
+"lab5.axf" - 0 Error(s), 0 Warning(s).
