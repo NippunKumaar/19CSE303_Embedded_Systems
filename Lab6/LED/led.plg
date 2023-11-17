@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\Lab6\LED\led.uvproj
+Project File Date:  09/11/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=744 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"led.axf" - 0 Error(s), 0 Warning(s).
