@@ -1,0 +1,24 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Nippun\Documents\keil_lab _Examples\19CSE303-Lab\Lab7\lab7.uvproj
+Project File Date:  11/29/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling exp1.c...
+exp1.c(16): warning:  #111-D: statement is unreachable
+exp1.c(17): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=528 RO-data=16 RW-data=0 ZI-data=1256  
+"lab7.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling exp1.c...
+exp1.c(16): warning:  #111-D: statement is unreachable
+exp1.c(17): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=524 RO-data=16 RW-data=0 ZI-data=1256  
+"lab7.axf" - 0 Error(s), 2 Warning(s).
